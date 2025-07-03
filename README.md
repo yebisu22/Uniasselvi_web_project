@@ -895,7 +895,7 @@ Botão clicavel de voltar
 
 # Transformando tudo em um site acessivel fora do local host
 
-Para isso foi usado a Cloudfire para externar o local_host para um tunel acessivel para todos com o link
+Para isso foi usado a Cloudflare para externar o local_host para um tunel acessivel para todos com o link
 
 
 
