@@ -166,7 +166,7 @@ def criar_tabelas():
             # Articuno
 
             Imagem(url="/static/images/artloc.png", descricao="Mapa art", pokemon=articuno),
-            Imagem(url="/static/images/invisivel.png", descricao="Esaço invisivel", pokemon=articuno),
+            Imagem(url="/static/images/invisivel.png", descricao="Espaço invisivel", pokemon=articuno),
             Imagem(url="/static/imgloc/parte 1.png", descricao="Lugar 1", pokemon=articuno),
             Imagem(url="/static/imgloc/parte 2.png", descricao="Lugar 2", pokemon=articuno),
             Imagem(url="/static/imgloc/parte 3.png", descricao="Lugar 3", pokemon=articuno),
@@ -176,17 +176,17 @@ def criar_tabelas():
 
             # Zapdos
             Imagem(url="/static/images/zaploc.png", descricao="Mapa art", pokemon=zapdos),
-            Imagem(url="/static/images/invisivel.png", descricao="Esaço invisivel", pokemon=zapdos),
+            Imagem(url="/static/images/invisivel.png", descricao="Espaço invisivel", pokemon=zapdos),
             Imagem(url="/static/images/casazap.png", descricao="Lugar 1", pokemon=zapdos),
 
 
             # Moltres
             Imagem(url="/static/images/ilhas.png", descricao="Mapa art", pokemon=moltres),
-            Imagem(url="/static/images/invisivel.png", descricao="Esaço invisivel", pokemon=moltres),
+            Imagem(url="/static/images/invisivel.png", descricao="Espaço invisivel", pokemon=moltres),
             Imagem(url="/static/imglocmol/parte 1.png", descricao="lugar 3", pokemon=moltres),
             Imagem(url="/static/imglocmol/parte 2.png", descricao="Lugar 1", pokemon=moltres),
             Imagem(url="/static/imglocmol/parte 3.png", descricao="Lugar 2", pokemon=moltres),
-            Imagem(url="/static/images/invisivel.png", descricao="Esaço invisivel", pokemon=moltres),
+            Imagem(url="/static/images/invisivel.png", descricao="Esapço invisivel", pokemon=moltres),
 
             # Mewtwo
             Imagem(url="/static/locmew/loc 1.png", descricao="Mapa art", pokemon=mewtwo),
