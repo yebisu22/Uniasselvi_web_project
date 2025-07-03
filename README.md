@@ -44,13 +44,13 @@ Lembrando que como estão em gif perdem bastante qualidade e velocidade por isso
 
 # Como tudo foi montado
 
-primeiro foi usado o Flask-SQLAlchemy com o SQLite gerenciando as tabelas Pokemon e Imagem como classes Python, e mapeando elas para tabelas no banco SQLite automaticamente
+Primeiro foi usado o Flask-SQLAlchemy com o SQLite gerenciando as tabelas Pokemon e Imagem como classes Python, e mapeando elas para tabelas no banco SQLite automaticamente
 
-tudo isso dentro de uma Venv ativada com 
+Tudo isso dentro de uma Venv ativada com 
 ```cpp
 source nova_venve/active
 ```
-depois foi organizado as pastas onde ficaria cada coisa 
+Depois foi organizado as pastas onde ficaria cada coisa 
 ```cpp
 projeto_pokemon/
 │
@@ -226,7 +226,7 @@ if __name__ == "__main__":
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 ```
-inicio responsavel pela importação Flask
+Inicio responsavel pela importação Flask
 
 ```python
 app = Flask(__name__)
@@ -256,7 +256,7 @@ class Pokemon(db.Model):
 ```
 Define a tablea pokemons com as informações principais como nome tipo a foto e a sprite deles animada 
 
-ao longo do projeto, acabei abandonando a lat e a lgn que seriam a localização, para um projeto mais sofisticado 
+Ao longo do projeto, acabei abandonando a lat e a lgn que seriam a localização, para um projeto mais sofisticado 
 
 ```python
 def to_dict(self):
@@ -307,7 +307,7 @@ def criar_tabelas():
         db.session.add_all(imagens)
         db.session.commit()
 ```
-criação de tabelas e população de dados 
+Criação de tabelas e população de dados 
 
 @app.before_first_request: executa essa função antes da primeira requisição ao servidor.
 
@@ -315,14 +315,14 @@ Cria as tabelas do banco se não existirem.
 
 Popula o banco com alguns Pokémon e suas imagens, se o banco estiver vazio.
 
-me permitindo poder apagar o arquivo pokemon.db quantas vezes necessarias
+Me permitindo poder apagar o arquivo pokemon.db quantas vezes necessarias
 
 ```python
 @app.route("/")
 def index():
     return render_template("index.html")
 ```
-define a rota para index.html e exibe como pagina principal do site
+Define a rota para index.html e exibe como pagina principal do site
 
 ```python
 @app.route("/api/pokemons")
@@ -338,7 +338,7 @@ def pokemon(nome):
     p = Pokemon.query.filter_by(nome=nome).first_or_404()
     return render_template("pokemon.html", pokemon=p)
 ```
-responsavel pelo detalhe de cada pokemon em uma pagina individual e retornando tudo para pokemon.html
+Responsavel pelo detalhe de cada pokemon em uma pagina individual e retornando tudo para pokemon.html
 ```python
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
@@ -508,12 +508,12 @@ Musica tema do fire red de fundo com volume ajustavel no script
 ```html
 <img src="/static/images/mapagba.png" ...>
 ```
-imagem do mapa do jogo com todos os pokemons lendarios 
+Imagem do mapa do jogo com todos os pokemons lendarios 
 
 ```html
 <ul id="lista"></ul>
 ```
-lista vazia de pokemon preenchida pela API
+Lista vazia de pokemon preenchida pela API
 
 ```html
 fetch("/api/pokemons")
@@ -849,7 +849,7 @@ Fogo = laranja
 
 Psíquico = rosa
 
-etc
+Etc
 
 ```html
 {% set comentarios_antes = {
@@ -879,7 +879,7 @@ Mapa principal maior
   </div>
 {% endfor %}
 ```
-imagens pequenas passo passo 
+Imagens pequenas passo passo 
 ```html
 document.addEventListener('click', () => {
   cry.play();
