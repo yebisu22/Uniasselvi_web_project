@@ -1,5 +1,5 @@
 # Introdução
-Detalhes sobre meu projeto web full-stack simples sobre pokemon fire red.
+Detalhes sobre meu projeto web full-stack simples sobre Pokémon Fire Red.
 
 As tecnologias utilizadas foram:
 
@@ -20,13 +20,13 @@ As tecnologias utilizadas foram:
 # Contextualização
 Para começar, tudo foi feito em um sistema Oracle linux 8.9 WSL
 
-O projeto teve grande inspiração em um video do canal Manual do Dev com bastante mudanças
+O projeto teve grande inspiração em um vídeo do canal Manual do Dev com várias mudanças
 
 https://youtu.be/SjtdH3dWLa8?si=uf4GEIryiyZQP2re
 
 A primeira Mudança é que trataria apenas de 4 pokemons que seria da franquia de jogos pokemon, sendo mais especifico do pokemon fire red
 
-Um site com um guia completo de como encontralos com uma pagina dedicada a cada um deles com animações e sons propios da musica tema e do propio pokemon
+Um site com um guia completo de como encontrá-los com uma página dedicada a cada um deles com animações e sons própios da musica tema e do pokemon
 
 # Imagens do site 
 
@@ -66,7 +66,7 @@ projeto_pokemon/
     ├── imglocmol/
     └── locmew/
 ```
-A pasta static foi onde foram armazenados as imagens, gif e sons de todos os pokemons
+A pasta /static foi onde foram armazenados as imagens, gif e sons de todos os pokemons
 
 # Codigos
 
