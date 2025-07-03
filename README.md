@@ -48,7 +48,7 @@ Primeiro foi usado o Flask-SQLAlchemy com o SQLite gerenciando as tabelas Pokemo
 
 Tudo isso dentro de uma Venv ativada com 
 ```cpp
-source nova_venve/active
+source nova_venve/activate
 ```
 Depois foi organizado as pastas onde ficaria cada coisa 
 ```cpp
@@ -254,9 +254,9 @@ class Pokemon(db.Model):
     lng = db.Column(db.Float)
     cor_dominante = db.Column(db.String(7))
 ```
-Define a tablea pokemons com as informações principais como nome tipo a foto e a sprite deles animada 
+Define a tabela pokemons com as informações principais como nome tipo a foto e a sprite deles animada 
 
-Ao longo do projeto, acabei abandonando a lat e a lgn que seriam a localização, para um projeto mais sofisticado 
+Ao longo do projeto, acabei abandonando a lat e a lgn que seriam a localização para um projeto mais sofisticado 
 
 ```python
 def to_dict(self):
@@ -280,7 +280,7 @@ class Imagem(db.Model):
     pokemon_id = db.Column(db.Integer, db.ForeignKey('pokemon.id'), nullable=False)
     pokemon = db.relationship('Pokemon', backref=db.backref('imagens', lazy=True))
 ```
-Tabela usada para armaenar imagens relaciondas a cada pokemon como por exemplo as localizações
+Tabela usada para armazenar imagens relaciondas a cada pokemon como por exemplo as localizações
 ```python
 @app.before_first_request
 def criar_tabelas():
@@ -338,7 +338,7 @@ def pokemon(nome):
     p = Pokemon.query.filter_by(nome=nome).first_or_404()
     return render_template("pokemon.html", pokemon=p)
 ```
-Responsavel pelo detalhe de cada pokemon em uma pagina individual e retornando tudo para pokemon.html
+Responsável pelo detalhe de cada pokemon em uma pagina individual e retornando tudo para pokemon.html
 ```python
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
@@ -508,7 +508,7 @@ Musica tema do fire red de fundo com volume ajustavel no script
 ```html
 <img src="/static/images/mapagba.png" ...>
 ```
-Imagem do mapa do jogo com todos os pokemons lendarios 
+Imagem do mapa do jogo com todos os Pokémons lendarios 
 
 ```html
 <ul id="lista"></ul>
@@ -889,7 +889,7 @@ document.addEventListener('click', () => {
 Audio ativo ao clicar 
 
 ```html
-<a href="/">← Voltar para ao menu </a>
+<a href="/">← Voltar ao menu </a>
 ```
 Botão clicavel de voltar 
 
