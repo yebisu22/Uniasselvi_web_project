@@ -28,6 +28,20 @@ A primeira Mudança é que trataria apenas de 4 pokemons que seria da franquia d
 
 Um site com um guia completo de como encontralos com uma pagina dedicada a cada um deles com animações e sons propios da musica tema e do propio pokemon
 
+# Imagens do site 
+
+<p float="left">
+  <img src="https://github.com/yebisu22/Uniasselvi_web_project/blob/52861573c8531f64bcab016b069979161d6581d0/GIFS/INICIOCERTO-ezgif.com-video-to-gif-converter.gif?raw=true" width="400" />
+  <img src="https://github.com/yebisu22/Uniasselvi_web_project/blob/52861573c8531f64bcab016b069979161d6581d0/GIFS/Articuno-ezgif.com-video-to-gif-converter.gif?raw=true" width="400" />
+  <img src="https://github.com/yebisu22/Uniasselvi_web_project/blob/52861573c8531f64bcab016b069979161d6581d0/GIFS/Zapdos-ezgif.com-video-to-gif-converter.gif?raw=true" width="400" />
+  <img src="https://github.com/yebisu22/Uniasselvi_web_project/blob/52861573c8531f64bcab016b069979161d6581d0/GIFS/Moltres-ezgif.com-video-to-gif-converter.gif?raw=true" width="400" />
+  <img src="https://github.com/yebisu22/Uniasselvi_web_project/blob/52861573c8531f64bcab016b069979161d6581d0/GIFS/MewTwocerto-ezgif.com-video-to-gif-converter.gif?raw=true" width="400" />
+</p>
+
+Lembrando que como estão em gif perdem bastante qualidade e velocidade por isso parecem travadas
+
+
+
 # Como tudo foi montado
 
 primeiro foi usado o Flask-SQLAlchemy com o SQLite gerenciando as tabelas Pokemon e Imagem como classes Python, e mapeando elas para tabelas no banco SQLite automaticamente
@@ -883,6 +897,5 @@ Botão clicavel de voltar
 
 Para isso foi usado a Cloudfire para externar o local_host para um tunel acessivel para todos com o link
 
-# Imagens do site 
 
 
