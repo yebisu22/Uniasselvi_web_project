@@ -66,7 +66,7 @@ projeto_pokemon/
     ├── imglocmol/
     └── locmew/
 ```
-A pasta /static foi onde foram armazenados as imagens, gif e sons de todos os pokemons
+A pasta ```/static``` foi onde foram armazenados as imagens, gif e sons de todos os pokemons
 
 # Codigos
 
