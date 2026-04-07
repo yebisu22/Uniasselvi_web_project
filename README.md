@@ -50,7 +50,7 @@ Primeiro foi usado o Flask-SQLAlchemy com o SQLite gerenciando as tabelas Pokemo
 
 Tudo isso dentro de uma Venv ativada com 
 ```cpp
-source nova_venve/activate
+source nova_venve/bin/activate
 ```
 Depois foi organizado as pastas onde ficaria cada coisa 
 ```cpp
